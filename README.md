@@ -60,7 +60,7 @@ Provides insights into detected objects from the ML model.
 
 ## 🖼️ Screenshots
 
-[Login Page]()
+[Login Page](https://github.com/VirajTharindu/CCTV-Operator-View-Web-Site---Frontend/blob/main/Screenshots/Login.png)
 
 [Operator View]()
 
