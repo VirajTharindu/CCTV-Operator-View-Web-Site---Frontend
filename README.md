@@ -71,6 +71,7 @@ Ensure you have Node.js and npm installed.
 Clone the Repository: (add the commands to Powershell & run)
 
 git clone https://github.com/VirajTharindu/CCTV-Operator-View-Web-Site---Frontend.git
+
 cd cctv-operator-website
 
 Install Dependencies:
