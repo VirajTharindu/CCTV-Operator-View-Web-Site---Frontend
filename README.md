@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+## 📹 CCTV Operator View Website (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔍 Overview
 
-## Available Scripts
+The CCTV Operator Website is a real-time monitoring system designed for AASL Sri Lanka to enhance security operations. It enables security operators to:
 
-In the project directory, you can run:
+Stream multiple CCTV feeds
 
-### `npm start`
+Receive real-time data updates via WebSockets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Interact with detected events powered by a vehicle detection ML model
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+## 🔑 Login Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Secure authentication for authorized operators.
 
-### `npm run build`
+User-friendly UI for easy access.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥️ CCTV Operator View
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📜 1. Streaming List Panel (Left Sidebar)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Displays a list of available CCTV streams.
 
-### `npm run eject`
+Operators can select a stream to view in the main display.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📺 2. Adjustable CCTV Display (Center)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Dynamically updates to show the selected CCTV feed.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Supports video controls (play, pause, fullscreen).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📡 3. Real-Time Data Panel (Right Sidebar)
 
-## Learn More
+Receives real-time updates from an external service.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Displays data as a list of incoming events.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📊 4. Detected Data Details Panel (Far Right Sidebar)
 
-### Code Splitting
+Displays details of selected real-time data items.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Provides insights into detected objects from the ML model.
 
-### Analyzing the Bundle Size
+## 🖼️ Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Login Page]()
 
-### Making a Progressive Web App
+[Operator View]()
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🛠️ Technologies Used
 
-### Advanced Configuration
+Frontend: React.js, HTML, CSS
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+State Management: React Hooks (useState, useEffect)
 
-### Deployment
+Icons & UI Enhancements: Lucide React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🚀 Installation & Setup
 
-### `npm run build` fails to minify
+## 📌 Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ensure you have Node.js and npm installed.
+
+## 🏗️ Steps to Run the Project
+
+Clone the Repository: (add the commands to Powershell & run)
+
+git clone https://github.com/VirajTharindu/CCTV-Operator-View-Web-Site---Frontend.git
+
+cd cctv-operator-website
+
+Install Dependencies:
+
+npm install
+
+Start the Development Server:
+
+npm start
+
+Access the Website:
+
+Open http://localhost:3000/ in your browser.
+
+## 📖 Usage Guide
+
+Login with operator credentials.
+
+Click on a stream from the Streaming List Panel to view it.
+
+Monitor real-time data updates in the Data Panel.
+
+Click on any detected data item to view its details in the Details Panel.
+
+## 🔮 Future Enhancements
+
+Implement real-time communication in the operator view.
+
+Develop API integrations with the backend to stream CCTV.
+
+Implement role-based authentication.
+
+Add a search and filter option for streams and detected events.
+
+Improve UI responsiveness for mobile devices.
+
+## 📩 Contact
+
+📧 Email: virajtharindu1997@gmail.com
+
+🔗 GitHub: https://github.com/VirajTharindu
