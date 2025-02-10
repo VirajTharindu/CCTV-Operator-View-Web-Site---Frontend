@@ -85,7 +85,7 @@ Access the Website:
 
 Open http://localhost:3000/ in your browser.
 
-📖 Usage Guide
+## 📖 Usage Guide
 
 Login with operator credentials.
 
@@ -95,7 +95,7 @@ Monitor real-time data updates in the Data Panel.
 
 Click on any detected data item to view its details in the Details Panel.
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Implement real-time communication in the operator view.
 
@@ -107,9 +107,7 @@ Add a search and filter option for streams and detected events.
 
 Improve UI responsiveness for mobile devices.
 
-📩 Contact
-
-Viraj Tharindu
+## 📩 Contact
 
 📧 Email: virajtharindu1997@gmail.com
 
