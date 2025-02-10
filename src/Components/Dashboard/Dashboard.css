@@ -1,0 +1,528 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard-container {
+    width: 100%;
+    height: 100vh; /* Ensures the container takes full viewport height */
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fbfd;
+  }
+  
+  
+  /* Navigation Bar */
+  .navigation-bar {
+    width: 100%;
+    height: 64px;
+    background: linear-gradient(to right, #1a237e, #0d47a1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo-container h1 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 300px;
+    height: 36px;
+    padding: 8px 16px 8px 40px;
+    border: none;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .search-input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .nav-btn {
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff4081;
+    color: white;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #1a237e;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .user-profile:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .user-avatar {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-name {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Main Content Layout */
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    height: calc(100vh - 60px); /* Make sure this is working */
+  }
+  
+  
+  
+  /* Common Panel Styles */
+  .panel-header {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0056b3;
+    border-bottom: 2px solid #e0e0e0;
+    background-color: #f5f7fa;
+  }
+
+
+  .no-stream-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #666;
+    font-size: 1.1em;
+  }
+  
+  
+  /* Stream List Panel */
+  .stream-list-panel {
+    width: 220px;
+    background: #ffffff;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .streams {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+  }
+  
+  .stream-box {
+    border: 1px solid #dfe4e8;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f4f8;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .stream-box.selected {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .stream-box:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05);
+  }
+  
+  /* Streaming Panel */
+  .streaming-panel {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;  /* Ensure it takes full height of its parent container */
+    
+  }
+
+
+
+  video {
+    width: 100%;  /* Ensures the video takes the full width of the container */
+    height: 100%; /* Ensures the video takes the full height of the container */
+    object-fit: contain; /* Keeps the aspect ratio intact */
+  }
+  
+  
+  
+  
+  .video-container {
+    flex: 1; /* Allow to fill remaining space */
+    width: 100%; /* Ensure full width of the container */
+    background: #f8f8f8;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  
+  
+  .playback-controls {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .control-btn {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dfe4e8;
+    background: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .control-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.1);
+
+  }
+
+  
+  .control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  
+  /* Right Panels - Data List and Plate Details */
+  .data-and-plate {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .data-list-panel, .plate-details-panel {
+    flex: 0 0 300px;
+    background: #ffffff;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .data-items {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+  }
+  
+  .data-item {
+    padding: 10px;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    background: #f8f8f8;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .data-item:hover {
+    background: #e9eff6;
+  }
+  
+  /* Plate Details Panel */
+  .plate-content {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .plate-image {
+    height: 150px;
+    background: #f8f8f8;
+    border: 1px solid #dfe4e8;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plate-labels {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .label {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f8f8f8;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  /* Scrollbars */
+  .streams::-webkit-scrollbar, .data-items::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .streams::-webkit-scrollbar-thumb, .data-items::-webkit-scrollbar-thumb {
+    background-color: #cfd8df;
+    border-radius: 4px;
+  }
+  
+
+  /* Maximized mode styles */
+.maximized-mode .main-content {
+    padding: 0;
+    gap: 0;
+  }
+  
+  .streaming-panel.maximized {
+    position: fixed;
+    top: 60px; /* Correct the height of the navbar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: calc(100vh - 60px); /* Takes full screen height minus navbar */
+  }
+  
+  
+  .streaming-panel.maximized .video-container {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  
+  /* Hide other panels when maximized */
+  .hidden {
+    display: none;
+  }
+  
+  /* Maximize button styles */
+  .maximize-btn {
+    padding: 8px 16px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .maximize-btn:hover {
+    background-color: #003d7a;
+  }
+  
+  /* Add smooth transitions */
+  .streaming-panel,
+  .stream-list-panel,
+  .data-and-plate {
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+  .streaming-panel .panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maximize-btn {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.maximize-btn:hover {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.maximize-btn:focus {
+  outline: none;
+}
+
+.maximize-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.maximize-btn:hover svg {
+  transform: scale(1.1);
+}
+
+  
+.additional-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+
+.fullscreen-btn {
+  right: auto;
+}
+
+
+
+
+.selected-stream {
+    font-size: 15px;
+    font-weight: bold;
+    color:  #0056b3; /* Blue background */
+    background-color:  #f8f8f8;
+    border: 1px solid #dfe4e8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px; /* Space below it */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition */
+    width: 100%;
+  }
+  
+  /* Adding a hover effect */
+  .selected-stream:hover {
+    background-color:  #e9eff6; /* Darker blue */
+    transform: translateY(-2px); /* Slightly raise it when hovered */
+  }
+  
+  /* Optional: Icon styling */
+  .selected-stream i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 22px;
+  }
+  
