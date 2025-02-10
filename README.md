@@ -4,7 +4,7 @@
 
 The CCTV Operator Website is a real-time monitoring system designed for AASL Sri Lanka to enhance security operations. It enables security operators to:
 
-<<<<<<< HEAD
+
 Stream multiple CCTV feeds
 
 Receive real-time data updates via WebSockets
@@ -14,7 +14,7 @@ Interact with detected events powered by a vehicle detection ML model
 ## ✨ Features
 
 ## 🔑 Login Page
-=======
+
  Stream multiple CCTV feeds
 
  Receive real-time data updates via WebSockets
@@ -24,7 +24,7 @@ Interact with detected events powered by a vehicle detection ML model
 ## ✨ Features
 
 ##  🔑 Login Page
->>>>>>> 853d39746448256d5fcb0acae77e4c30a6647d29
+
 
 Secure authentication for authorized operators.
 
@@ -50,11 +50,8 @@ Receives real-time updates from an external service.
 
 Displays data as a list of incoming events.
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 853d39746448256d5fcb0acae77e4c30a6647d29
 ## 📊 4. Detected Data Details Panel (Far Right Sidebar)
 
 Displays details of selected real-time data items.
@@ -81,11 +78,11 @@ Icons & UI Enhancements: Lucide React
 
 Ensure you have Node.js and npm installed.
 
-<<<<<<< HEAD
+
 ## 🏗️ Steps to Run the Project
-=======
+
 ## 🏗️ Steps to Run the Project 
->>>>>>> 853d39746448256d5fcb0acae77e4c30a6647d29
+
 
 Clone the Repository: (add the commands to Powershell & run)
 
@@ -132,8 +129,4 @@ Improve UI responsiveness for mobile devices.
 📧 Email: virajtharindu1997@gmail.com
 
 🔗 GitHub: https://github.com/VirajTharindu
-<<<<<<< HEAD
-=======
 
-
->>>>>>> 853d39746448256d5fcb0acae77e4c30a6647d29
