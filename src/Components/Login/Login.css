@@ -1,0 +1,132 @@
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e3f2fd; /* Light blue background for the app theme */
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("https://via.placeholder.com/1920x1080"); /* Replace with a theme-relevant background */
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(6px);
+  background-color: rgba(26, 35, 126, 0.7); /* Fallback for darker blue tint */
+}
+
+/* Login Box */
+.login-box {
+  background: rgba(255, 255, 255, 0.85); /* Slight transparency for modern look */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Header */
+.login-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0d47a1; /* Dark blue */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-subtitle {
+  font-size: 16px;
+  color: #555; /* Softer gray for subtleties */
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #333; /* High contrast for readability */
+  margin-bottom: 0.5rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #f9f9f9;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #1a237e; /* Primary blue shade */
+  box-shadow: 0 0 0 3px rgba(26, 35, 126, 0.3); /* Soft focus shadow */
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1a237e; /* Deep blue */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  background-color: #0d47a1; /* Slightly darker blue for hover */
+  transform: scale(1.03);
+}
+
+/* Footer */
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 12px;
+  color: #888; /* Subtle gray for footer */
+  text-align: center;
+}
+
+.login-footer a {
+  color: #1a237e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-footer a:hover {
+  color: #ff4081; /* Pink accent for hover */
+}
+
+/* Additional Enhancements */
+::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a237e; /* Match scrollbar color with theme */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d47a1;
+}
