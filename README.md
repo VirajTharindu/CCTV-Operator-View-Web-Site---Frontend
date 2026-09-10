@@ -13,16 +13,6 @@ Interact with detected events powered by a vehicle detection ML model
 
 ## ✨ Features
 
-## 🔑 Login Page
-
- Stream multiple CCTV feeds
-
- Receive real-time data updates via WebSockets
-
- Interact with detected events powered by a vehicle detection ML model
-
-## ✨ Features
-
 ##  🔑 Login Page
 
 
@@ -72,46 +62,6 @@ State Management: React Hooks (useState, useEffect)
 
 Icons & UI Enhancements: Lucide React
 
-## 🚀 Installation & Setup
-
-## 📌 Prerequisites
-
-Ensure you have Node.js and npm installed.
-
-
-## 🏗️ Steps to Run the Project
-
-
-
-
-Clone the Repository: (add the commands to Powershell & run)
-
-git clone https://github.com/VirajTharindu/CCTV-Operator-View-Web-Site---Frontend.git
-
-cd cctv-operator-website
-
-Install Dependencies:
-
-npm install
-
-Start the Development Server:
-
-npm start
-
-Access the Website:
-
-Open http://localhost:3000/ in your browser.
-
-## 📖 Usage Guide
-
-Login with operator credentials.
-
-Click on a stream from the Streaming List Panel to view it.
-
-Monitor real-time data updates in the Data Panel.
-
-Click on any detected data item to view its details in the Details Panel.
-
 ## 🔮 Future Enhancements
 
 Implement real-time communication in the operator view.
@@ -126,7 +76,8 @@ Improve UI responsiveness for mobile devices.
 
 ## 📩 Contact
 
-📧 Email: virajtharindu1997@gmail.com
+📧 [My E-mail](virajtharindu1997@gmail.com)
 
-🔗 GitHub: https://github.com/VirajTharindu
+🔗 [Github Page](https://github.com/VirajTharindu)
 
+📺 [Visit my portfolio](https://viraj-tharindu-portfolio-web-site.vercel.app/)
